@@ -19,12 +19,19 @@ const SongDetails = () => {
         <h2 className="text-3xl font-bold text-white">Lyrics:</h2>
         <div className="mt-5">
           {songData?.sections[1].type === "LYRICS" ? (
-            songData?.sections[1].text.map((line, i) => <p className="my-1 text-base text-gray-400">{line}</p>)
+            songData?.sections[1].text.map((line, i) => (
+              <p className="my-1 text-base text-gray-400">{line}</p>
+            ))
           ) : (
-            <p className="my-1 text-base text-gray-400">Sorry, no lyrics found!</p>
+            <p className="my-1 text-base text-gray-400">
+              Sorry, no lyrics found!
+            </p>
           )}
         </div>
       </div>
+      <RelatedSongs 
+      
+      />
     </div>
   );
 };
