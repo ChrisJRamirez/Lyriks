@@ -11,6 +11,7 @@ const TopCharts = () => {
   if (isFetching) return <Loader title="Loading Top Charts" />;
 
   if (error) return <Error />;
+  console.log(error.message)
 
   return (
     <div className="flex flex-col">
