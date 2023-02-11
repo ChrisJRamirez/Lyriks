@@ -27,8 +27,6 @@ const CountryTracks = () => {
 
   if (error && country !== "") return <Error />;
 
-  console.log(country);
-
   return (
     <div className="flex flex-col">
       <h2 className="mt-4 mb-10 text-3xl font-bold text-left text-white">
