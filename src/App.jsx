@@ -17,7 +17,7 @@ const App = () => {
           <div className="flex-1 pb-40 h-fit">
             <Routes>
               <Route path="/" element={<Discover />} />
-              <Route path="/discover" element={<Discover />} />
+              {/* <Route path="/discover" element={<Discover />} /> */}
               <Route path="/top-artists" element={<TopArtists />} />
               <Route path="/top-charts" element={<TopCharts />} />
               <Route path="/around-you" element={<AroundYou />} />
